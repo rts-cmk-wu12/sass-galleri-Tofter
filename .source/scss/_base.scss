@@ -1,0 +1,21 @@
+// (grundlæggende styling som reset, typografi osv.)
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+a{
+    text-decoration: none;
+}

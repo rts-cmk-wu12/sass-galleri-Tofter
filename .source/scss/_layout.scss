@@ -1,0 +1,71 @@
+// (layout relateret styling)
+
+.wrapper {
+    margin: 0.6em;
+}
+
+.main {
+
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.7em;
+
+    }
+
+}
+
+.explorer{
+
+    &__mobile--button{
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 500px) {
+    .main {
+        &__gallery{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .explorer{
+        &__mobile--button{
+            display: none;
+        }
+        
+    }
+    #explorer__list{
+        display: flex;
+    }
+
+    .main{
+
+        &__gallery{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (min-width: 1050px) {
+    .main{
+
+        &__gallery{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .explorer{
+        margin-left: 12em;
+    }
+}
+
+@media (min-width: 1350px) {
+    .main{
+
+        &__gallery{
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+}

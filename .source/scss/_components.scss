@@ -1,0 +1,76 @@
+// (styling til individuelle komponenter som billedkort, modals osv.)
+@use 'variables';
+
+
+.header {
+    display: flex;
+    border-bottom: 1px solid black;
+
+    &__search-input {
+        margin: 0.5em 1em;
+        padding: 0.5em 0.5em 0.5em 1em;
+        width: 100%;
+        background-color: variables.$background-color;
+        border-radius: 3px;
+        border: none;
+    }
+}
+
+
+
+.explorer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+
+    &__navigation{
+        margin-bottom: 2em;
+    }
+
+    &__title {
+        margin: 0.4em;
+        font-size: 35px;
+    }
+
+    &__mobile--button {
+        padding: 0.4em 0.8em;
+        opacity: 0.3;
+    }
+
+    &__more{
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        gap: 1em;
+        margin-top: 0.5em;
+        opacity: 0.5;
+        cursor: pointer;
+
+        &--hidden {
+            display: none;
+        }
+
+    }
+
+}
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
+
+    &__social-media{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0.5em;
+        width: 45%;
+    }
+   
+}
